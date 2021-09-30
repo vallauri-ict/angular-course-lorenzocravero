@@ -1,4 +1,5 @@
 # AngularCourse
+*Studente Lorenzo Cravero classe 5B Inf*
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
