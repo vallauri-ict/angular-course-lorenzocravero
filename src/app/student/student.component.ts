@@ -24,9 +24,17 @@ export class StudentComponent implements OnInit {
 
   student :any;
   constructor() { 
+    this.randomStudent();
+  }
+
+  private randomStudent(){
     //tutte le volte che verrà istanziato uno studente, uno di questi verrà preso a caso
     let n = Math.floor(Math.random() * this.studentList.length);
     this.student = this.studentList[n];
+  }
+
+  onStudentClick(){
+    this.randomStudent();
   }
 
   ngOnInit(): void {
