@@ -16,7 +16,7 @@ export class StudentComponent implements OnInit {
   private randomStudentPro(){
     //tutte le volte che verrà istanziato uno studente, uno di questi verrà preso a caso
     let n = Math.floor(Math.random() * 2);
-    if(n == 1) this.student.isPro = true;
+    this.student.isPro = (n == 1);
   }
 
   onStudentClick(){

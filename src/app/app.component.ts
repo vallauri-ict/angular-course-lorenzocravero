@@ -19,6 +19,8 @@ export class AppComponent {
     { name: "Paolo Giordano", hobby: "Cinema" , gender: "M", isPro : false},
     { name: "Luca Pelissero", hobby: "Palestra" , gender: "M", isPro : false},
     { name: "Bianca Teleman", hobby: "Coding" , gender: "F", isPro : false},
-    { name: "Gabriele Leone", hobby: "Palestra" , gender: "F", isPro : false},
+    { name: "Alessandro Gassmann", hobby: "Cinema" , gender: "M", isPro : false},
+    { name: "Ettore Esposito", hobby: "Coding" , gender: "F", isPro : false},
+    { name: "Alberto Savoldelli", hobby: "Calcio" , gender: "M", isPro : false},
   ]
 }
