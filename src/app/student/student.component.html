@@ -6,5 +6,16 @@
     'male' : student.gender == 'M',
     'underline' : student.hobby == 'Calcio' }"
 >
-    Nome: {{student.name}} - Hobby: {{student.hobby}}
+    Nome: {{student.name}} 
+    
+    <!-- <span *ngIf="student.isPro">(professionista)</span>
+    <span *ngIf="!student.isPro">(dilettante)</span> -->
+
+    <!-- utilizziamo la else della ngIf -->
+    <span *ngIf="student.isPro;else noPro">(professionista)</span>
+
+    <ng-template #noPro>
+        <span>(dilettante)</span>
+    </ng-template>
+    - Hobby: {{student.hobby}}
     </p>

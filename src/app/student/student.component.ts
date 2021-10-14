@@ -8,18 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class StudentComponent implements OnInit {
 
   studentList = [
-    { name: "Lorenzo Cravero", hobby: "Calcio" , gender: "M"},
-    { name: "Edoardo Abebei", hobby: "Coding" , gender: "M"},
-    { name: "Ivan Angjelovski", hobby: "Palestra" , gender: "M"},
-    { name: "Fabio Cavallero", hobby: "Calcio" , gender: "F"},
-    { name: "Gleni Ruci", hobby: "Coding" , gender: "M"},
-    { name: "Emanuele Altavlilla", hobby: "Calcio" , gender: "M"},
-    { name: "Giada Valinotto", hobby: "Cinema" , gender: "F"},
-    { name: "Michele Stefanachi", hobby: "Calcio" , gender: "M"},
-    { name: "Paolo Giordano", hobby: "Cinema" , gender: "M"},
-    { name: "Luca Pelissero", hobby: "Palestra" , gender: "M"},
-    { name: "Bianca Teleman", hobby: "Coding" , gender: "F"},
-    { name: "Gabriele Leone", hobby: "Palestra" , gender: "F"},
+    { name: "Lorenzo Cravero", hobby: "Calcio" , gender: "M", isPro : false},
+    { name: "Edoardo Abebei", hobby: "Coding" , gender: "M", isPro : false},
+    { name: "Ivan Angjelovski", hobby: "Palestra" , gender: "M", isPro : true},
+    { name: "Fabio Cavallero", hobby: "Calcio" , gender: "F", isPro : true},
+    { name: "Gleni Ruci", hobby: "Coding" , gender: "M", isPro : false},
+    { name: "Emanuele Altavlilla", hobby: "Calcio" , gender: "M", isPro : false},
+    { name: "Giada Valinotto", hobby: "Cinema" , gender: "F", isPro : true},
+    { name: "Michele Stefanachi", hobby: "Calcio" , gender: "M", isPro : false},
+    { name: "Paolo Giordano", hobby: "Cinema" , gender: "M", isPro : false},
+    { name: "Luca Pelissero", hobby: "Palestra" , gender: "M", isPro : true},
+    { name: "Bianca Teleman", hobby: "Coding" , gender: "F", isPro : true},
+    { name: "Gabriele Leone", hobby: "Palestra" , gender: "F", isPro : false},
   ]
 
   student :any;
