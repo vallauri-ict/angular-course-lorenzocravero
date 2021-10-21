@@ -9,9 +9,7 @@ export class StudentComponent implements OnInit {
   @Input()student:any;
 
 
-  constructor() { 
-    
-  }
+  constructor() {}
 
   private randomStudentPro(){
     //tutte le volte che verrà istanziato uno studente, uno di questi verrà preso a caso
