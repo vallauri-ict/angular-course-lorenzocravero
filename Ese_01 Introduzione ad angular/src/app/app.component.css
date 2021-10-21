@@ -16,6 +16,19 @@
     margin: 8px 0;
   }
 
+  button{
+    background-color: #1976d2;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 20px auto;
+    color: whitesmoke;
+  }
+
+  button:disabled{
+    background-color: whitesmoke;
+    color : gray;
+  }
+
   p {
     margin: 0;
   }
