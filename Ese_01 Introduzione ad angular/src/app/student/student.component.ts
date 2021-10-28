@@ -1,12 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output , EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-student',
   templateUrl: './student.component.html',
   styleUrls: ['./student.component.css']
 })
+
 export class StudentComponent implements OnInit {
   @Input()student:any;
+  @Output() studentDeleteEvent = new EventEmitter<any>();
 
 
   constructor() {}

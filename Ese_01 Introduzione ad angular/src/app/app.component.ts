@@ -32,23 +32,29 @@ export class AppComponent {
   studentGender: string = "F";
 
   addStudent(){
-    let newStudent = { name: this.studentName, hobby: this.studentHobby , gender: this.studentGender, isPro : false};
+    let newStudent : any = { name: this.studentName, hobby: this.studentHobby , gender: this.studentGender, isPro : false, index:this.studentList.length};
     this.studentList.push(newStudent);
     this.studentName = "";
     this.studentHobby = "";
     this.studentGender = "";
   }
 
-  deleteStudent(i: number){
+  deleteStudent(i:number){
     this.studentList.splice(i,1);
+  }
+
+  onStudentDeleteEvent(student: any){
+    let index: number = this.studentList.indexOf(student);
+    this.studentList.splice(index,1);
   }
 
   constructor(){
     for (let i = 0; i < 4; i++) 
     {
       let n = Math.floor(Math.random() * this.studentRepository.length);
-      let student = this.studentRepository[n];
-      this.studentList.push(student);
+      let tempStudent : any = this.studentRepository[n];
+      tempStudent.index = i;
+      this.studentList.push(tempStudent);
       this.studentRepository.splice(n,1);
     }
   }
