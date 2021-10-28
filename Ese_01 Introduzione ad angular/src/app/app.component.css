@@ -24,6 +24,13 @@
     color: whitesmoke;
   }
 
+  button.delete{
+    background-color: lightcoral;
+    margin-left: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   #genders{
     display: flex;
     flex-direction: row;

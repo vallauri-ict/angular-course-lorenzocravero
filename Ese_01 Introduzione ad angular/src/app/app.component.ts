@@ -39,6 +39,10 @@ export class AppComponent {
     this.studentGender = "";
   }
 
+  deleteStudent(i: number){
+    this.studentList.splice(i,1);
+  }
+
   constructor(){
     for (let i = 0; i < 4; i++) 
     {
