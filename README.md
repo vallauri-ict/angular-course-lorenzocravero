@@ -4,7 +4,7 @@
   <a href="https://angular.io/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="150px" /></a>
 </h1>
 
-*Troverete progetti contententi alcune funzionalità di angular:*
+*Troverete progetti contententi alcune funzionalità di angular*
 
 *Per clonare il repository:*
 - copiare questo link
